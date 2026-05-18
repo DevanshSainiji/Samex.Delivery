@@ -135,8 +135,8 @@ th, td {
 }
 
 th {
-  font-weight: 500;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: black;
   background-color: #f1f5f9;
 }
 

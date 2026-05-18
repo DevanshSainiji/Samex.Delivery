@@ -130,9 +130,9 @@ function App() {
               backgroundColor: getStatusColor(filterStatus),
               color: 'white',
               fontWeight: '600'
-            } : {}}
+            } : { color: 'gray' }}
           >
-            <option value="" style={{backgroundColor: 'white', color: 'black'}}>All Statuses</option>
+            <option value="" style={{backgroundColor: 'white', color: 'gray'}}>All Statuses</option>
             {VALID_STATUSES.map(status => (
               <option key={status} value={status} style={{backgroundColor: 'white', color: 'black'}}>{status}</option>
             ))}
