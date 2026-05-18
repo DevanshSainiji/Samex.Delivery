@@ -123,10 +123,18 @@ function App() {
             value={searchDest}
             onChange={e => setSearchDest(e.target.value)}
           />
-          <select value={filterStatus} onChange={e => setFilterStatus(e.target.value)}>
-            <option value="">All Statuses</option>
+          <select 
+            value={filterStatus} 
+            onChange={e => setFilterStatus(e.target.value)}
+            style={filterStatus ? {
+              backgroundColor: getStatusColor(filterStatus),
+              color: 'white',
+              fontWeight: '600'
+            } : {}}
+          >
+            <option value="" style={{backgroundColor: 'white', color: 'black'}}>All Statuses</option>
             {VALID_STATUSES.map(status => (
-              <option key={status} value={status}>{status}</option>
+              <option key={status} value={status} style={{backgroundColor: 'white', color: 'black'}}>{status}</option>
             ))}
           </select>
         </div>
