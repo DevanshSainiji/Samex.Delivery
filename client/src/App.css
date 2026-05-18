@@ -39,8 +39,15 @@ header {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 3.2rem;
   margin-bottom: 0.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+header p {
+  font-size: 1.4rem;
+  color: var(--text-muted);
 }
 
 .card {
