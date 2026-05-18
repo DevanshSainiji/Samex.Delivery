@@ -5,6 +5,17 @@ import './App.css';
 const API_URL = 'http://localhost:5000/api/shipments';
 const VALID_STATUSES = ['Pending', 'Picked Up', 'In Transit', 'Delivered', 'Cancelled'];
 
+const getStatusColor = (status) => {
+  switch(status) {
+    case 'Pending': return 'var(--status-pending)';
+    case 'Picked Up': return 'var(--status-picked)';
+    case 'In Transit': return 'var(--status-transit)';
+    case 'Delivered': return 'var(--status-delivered)';
+    case 'Cancelled': return 'var(--status-cancelled)';
+    default: return 'var(--text-main)';
+  }
+};
+
 function App() {
   const [shipments, setShipments] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -142,11 +153,19 @@ function App() {
                       <td>
                         <select 
                           className="status-dropdown"
+                          style={{
+                            backgroundColor: getStatusColor(shipment.status),
+                            color: 'white',
+                            border: '1px solid black',
+                            borderRadius: '4px',
+                            fontWeight: '600',
+                            padding: '4px 8px'
+                          }}
                           value={shipment.status}
                           onChange={(e) => handleStatusChange(shipment.id, e.target.value)}
                         >
                           {VALID_STATUSES.map(status => (
-                            <option key={status} value={status}>{status}</option>
+                            <option key={status} value={status} style={{backgroundColor: 'white', color: 'black'}}>{status}</option>
                           ))}
                         </select>
                       </td>
