@@ -171,7 +171,7 @@ function App() {
                           style={{
                             backgroundColor: getStatusColor(shipment.status),
                             color: 'white',
-                            border: '1px solid black',
+                            border: '2px solid white',
                             borderRadius: '4px',
                             fontWeight: '600',
                             padding: '4px 8px'
