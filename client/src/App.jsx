@@ -16,6 +16,13 @@ const getStatusColor = (status) => {
   }
 };
 
+const getRowBackgroundColor = (index) => {
+  // Start at lightness 27% (#003F88) and increase by 2% per row
+  // Cap at 55% so white text remains readable. Reaches cap around row 14.
+  const lightness = Math.min(27 + (index * 2), 55);
+  return `hsl(212, 100%, ${lightness}%)`;
+};
+
 function App() {
   const [shipments, setShipments] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -144,8 +151,8 @@ function App() {
                     <td colSpan="5" className="empty-state">No shipments found.</td>
                   </tr>
                 ) : (
-                  filteredShipments.map(shipment => (
-                    <tr key={shipment.id}>
+                  filteredShipments.map((shipment, index) => (
+                    <tr key={shipment.id} style={{ backgroundColor: getRowBackgroundColor(index), color: 'white' }}>
                       <td><strong>{shipment.id}</strong></td>
                       <td>{shipment.sender}</td>
                       <td>{shipment.receiver}</td>
