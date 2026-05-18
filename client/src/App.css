@@ -21,7 +21,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: var(--bg-color);
+  background: linear-gradient(135deg, #fff0e5 0%, #e5f0ff 100%);
+  min-height: 100vh;
   color: var(--text-main);
   line-height: 1.5;
 }
