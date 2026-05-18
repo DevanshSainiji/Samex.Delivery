@@ -1,0 +1,65 @@
+[
+  {
+    "id": "SHP-1001",
+    "sender": "Acme Corp",
+    "receiver": "Beta Industries",
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "status": "Pending",
+    "createdAt": "2026-05-18T10:00:00.000Z"
+  },
+  {
+    "id": "SHP-1002",
+    "sender": "Star Logistics",
+    "receiver": "Moon Traders",
+    "origin": "Bangalore",
+    "destination": "Chennai",
+    "status": "Picked Up",
+    "createdAt": "2026-05-18T10:30:00.000Z"
+  },
+  {
+    "id": "SHP-1003",
+    "sender": "Delta Supplies",
+    "receiver": "Gamma Retail",
+    "origin": "Hyderabad",
+    "destination": "Pune",
+    "status": "In Transit",
+    "createdAt": "2026-05-18T11:00:00.000Z"
+  },
+  {
+    "id": "SHP-1004",
+    "sender": "Omega Exports",
+    "receiver": "Alpha Imports",
+    "origin": "Kolkata",
+    "destination": "Jaipur",
+    "status": "Delivered",
+    "createdAt": "2026-05-18T11:30:00.000Z"
+  },
+  {
+    "id": "SHP-1005",
+    "sender": "Nova Shipping",
+    "receiver": "Zen Warehouse",
+    "origin": "Ahmedabad",
+    "destination": "Lucknow",
+    "status": "Pending",
+    "createdAt": "2026-05-18T12:00:00.000Z"
+  },
+  {
+    "id": "SHP-1006",
+    "sender": "Prime Movers",
+    "receiver": "Quick Mart",
+    "origin": "Surat",
+    "destination": "Indore",
+    "status": "Cancelled",
+    "createdAt": "2026-05-18T12:30:00.000Z"
+  },
+  {
+    "id": "SHP-F47E7C",
+    "sender": "algo_morph",
+    "receiver": "mlp logistics",
+    "origin": "pune",
+    "destination": "mumbai",
+    "status": "Pending",
+    "createdAt": "2026-05-18T09:31:17.180Z"
+  }
+]
