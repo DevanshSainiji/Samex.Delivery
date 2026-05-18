@@ -51,6 +51,26 @@ h1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
+.create-card {
+  background-color: #FF6B00;
+  color: white;
+  border-color: #e66000;
+}
+
+.create-card label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.create-card button {
+  background-color: white;
+  color: #FF6B00;
+  font-weight: 600;
+}
+
+.create-card button:hover {
+  background-color: #f8fafc;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

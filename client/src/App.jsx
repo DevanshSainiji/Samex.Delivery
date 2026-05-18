@@ -84,7 +84,7 @@ function App() {
         <p>Manage and track shipments seamlessly.</p>
       </header>
 
-      <section className="card">
+      <section className="card create-card">
         <h3>Create New Shipment</h3>
         <form onSubmit={handleCreate}>
           <div className="form-grid">
