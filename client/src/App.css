@@ -54,7 +54,7 @@ h1 {
 .create-card {
   background-color: #FF6B00;
   color: white;
-  border-color: #e66000;
+  border: 4px solid black;
 }
 
 .create-card label {
