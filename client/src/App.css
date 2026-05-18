@@ -92,7 +92,7 @@ label {
 
 input, select {
   padding: 0.5rem;
-  border: 1px solid var(--border);
+  border: 2px solid black;
   border-radius: 4px;
   font-size: 1rem;
 }
@@ -100,7 +100,7 @@ input, select {
 button {
   background-color: var(--primary);
   color: white;
-  border: none;
+  border: 2px solid black;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: 500;
